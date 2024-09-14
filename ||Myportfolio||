@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Aprajita Singh</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #4a4a4a;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #5d4037;
+        }
+        p {
+            line-height: 1.8;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        a {
+            color: #795548;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Header */
+        header {
+            background-color: #795548;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        /* Introduction Section */
+        .intro {
+            background-color: #ffffff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            color: #4a4a4a;
+        }
+        .intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .section-title h2::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background-color: #5d4037;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Education Section */
+        .education {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .education-item {
+            background-color: #fff3e0;
+            padding: 20px;
+            border-radius: 10px;
+            width: 45%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .education-item h3 {
+            color: #795548;
+            margin-bottom: 10px;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project-item {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-item:hover {
+            transform: scale(1.05);
+        }
+        .project-item h3 {
+            color: #5d4037;
+            margin-bottom: 10px;
+        }
+        .project-item p {
+            color: #6d6d6d;
+            font-size: 0.95rem;
+        }
+
+        /* Skills Section */
+        .skills {
+            background-color: #ffccbc;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .skill-item {
+            display: inline-block;
+            background-color: #ffffff;
+            border: 2px solid #5d4037;
+            padding: 15px 25px;
+            margin: 10px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            color: #5d4037;
+        }
+
+        /* Social Media Section */
+        .social-media {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .social-media a {
+            display: inline-block;
+            background-color: #795548;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            margin: 10px;
+            font-size: 1.1rem;
+        }
+        .social-media a:hover {
+            background-color: #5d4037;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #795548;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .education {
+                flex-direction: column;
+                align-items: center;
+            }
+            .education-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+            .project-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Aprajita Singh</h1>
+        <p>BCA Student | Passionate Coder</p>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <h2>About Me</h2>
+        <p>Hey! I'm Aprajita Singh, a BCA student with a passion for coding and technology. My portfolio is a glimpse into my journey through the world of computer science. Join me as I showcase my projects and explore the endless possibilities of tech!</p>
+    </section>
+
+    <!-- Education Section -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Education</h2>
+        </div>
+        <div class="education">
+            <div class="education-item">
+                <h3>Schooling</h3>
+                <p>Gyandoya Gurukul, Patna (Bihar)</p>
+            </div>
+            <div class="education-item">
+                <h3>Intermediate</h3>
+                <p>J.D. Women's College, Patna</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+        <div class="projects">
+            <div class="project-item">
+                <h3>Signup Website</h3>
+                <p>This project is a user-friendly website where students can register by filling in their basic information. It uses HTML for structure and CSS for a responsive layout. The focus was on form validation, user interaction, and simplicity.</p>
+            </div>
+            <div class="project-item">
+                <h3>Quiz Game (Python)</h3>
+                <p>A Python-based command-line quiz game with multiple-choice questions. The game keeps track of the user’s score and gives feedback after each question. This project helped in understanding loops, conditionals, and file handling in Python.</p>
+            </div>
+            <div class="project-item">
+                <h3>Portfolio Project</h3>
+                <p>This portfolio is an ongoing project that showcases my journey and skills. Using HTML and CSS, I aimed to create an aesthetically pleasing and responsive design, with smooth user experience and accessibility.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="section-title">
+            <h2>Technical Skills</h2>
+        </div>
+        <span class="skill-item">Python</span>
+        <span class="skill-item">CSS</span>
+        <span class="skill-item">MySQL</span>
+        <span class="skill-item">HTML</span>
+        <span class="skill-item">Data Structures</span>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+        <div class="section-title">
+            <h2>Social Media</h2>
+        </div>
+        <a href="https://www.linkedin.com/in/aprajita-singh-aa0521267" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Msaprajita" target="_blank">GitHub</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Thank you for visiting my portfolio! I look forward to connecting with you.</p>
+        <p>Aprajita Singh &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
